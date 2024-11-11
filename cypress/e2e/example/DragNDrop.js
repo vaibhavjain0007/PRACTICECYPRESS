@@ -2,7 +2,7 @@ import "cypress-real-events";
 
 describe('test drag and drop', () => {
 
-    it ('drag and drop using cypress real events plugin methods', () => {
+    it ('drag and drop using trigger', () => {
 
         // cy.visit('https://practice.expandtesting.com/drag-and-drop')
         // cy.get('#column-a').trigger('mousemove').trigger('mousedown')
@@ -29,5 +29,9 @@ describe('test drag and drop', () => {
     it ('drag and drop using cypress drag and drop plugin', () => {
         cy.visit('https://artoftesting.com/samplesiteforselenium')
         cy.get('#myImage').drag('#targetDiv')
+    })
+
+    it ('drag and drop using cypress real events plugin methods', () => {
+        
     })
 })
