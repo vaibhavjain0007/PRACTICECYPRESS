@@ -26,12 +26,12 @@ describe('test drag and drop', () => {
         cy.get('#targetDiv').should('be.visible')
     })
 
-    it ('drag and drop using cypress drag and drop plugin', () => {
+    it.only ('drag and drop using cypress drag and drop plugin', () => {
         cy.visit('https://artoftesting.com/samplesiteforselenium')
         cy.get('#myImage').drag('#targetDiv')
     })
 
     it ('drag and drop using cypress real events plugin methods', () => {
-        
+        cy.visit('https://artoftesting.com/samplesiteforselenium')
     })
 })
